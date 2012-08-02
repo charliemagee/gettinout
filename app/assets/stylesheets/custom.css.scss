@@ -1,0 +1,168 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 170px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* colors */
+$grayLight : #777;
+$grayLighter : #9e9e9e;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* alignment and moving things around */
+.center {
+  text-align: center;
+  h1 {
+  	margin-bottom: 10px;
+	}
+}
+
+.push-down1 {
+	margin-top:25px;
+}
+
+/* tweaks to bootstrap */
+.navbar h3 a {
+	color: white !important;
+	font-size: 30px !important;
+	margin: 0 0 0 20px;
+}
+
+.navbar h3 a:hover {
+	color: black !important;
+	text-decoration: none;
+}
+
+.btn-large {
+  margin-top:15px;
+ }
+
+a {
+  text-decoration: none !important;
+}
+.whitetype {
+  color:white;
+}
+
+/* footer */
+
+footer {
+  margin: 45px auto 20px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  width:940px;
+  color: $grayLight;
+  a {
+  	color: #555;
+  	&:hover { 
+  		color: black;
+  		text-decoration: none;
+		}
+	}
+	small {
+  	float: left;
+  	margin-left:20px;
+	}
+	ul {
+  	float: right;
+  	list-style: none;
+  	margin-right:20px;
+  	li {
+  		float: left;
+  		margin-left: 10px;
+		}
+	}
+}
+
+/* sidebar */
+
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.6em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
+
+ /* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}

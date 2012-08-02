@@ -1,0 +1,3 @@
+Ruby on Rails Starter App.
+Uses Active Admin with Devise, Carrierwave, Formtastic.
+Includes a SuperAdmin.

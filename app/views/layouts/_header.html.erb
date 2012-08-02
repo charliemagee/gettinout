@@ -1,0 +1,24 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+    	<div class="pull-left"><%= link_to image_tag("PVlogo.png", alt: "Getting Out"), root_path %></div>
+      <h3 class="pull-left push-down1"><%= link_to "Gettin Out", 'home', id: "logo" %></h3>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <% if signed_in? %>
+            <li class="divider"></li>
+              <li><%= link_to "Settings", settings_path %></li>
+              <li>
+                <%= link_to "Sign out", signout_path, method: "destroy" %>
+              </li>
+            </li>
+          <% else %>
+            <li><%= link_to "Sign in", signin_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
