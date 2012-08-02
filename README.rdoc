@@ -1,3 +1,4 @@
-Ruby on Rails Starter App.
-Uses Active Admin with Devise, Carrierwave, Formtastic.
+This app is to help cognitively challenged people get out and about more often.
+
+Ruby on Rails with Active Admin, Devise, Carrierwave, Formtastic.
 Includes a SuperAdmin.
