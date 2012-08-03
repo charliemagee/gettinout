@@ -16,6 +16,7 @@ Gettinout::Application.routes.draw do
   match '/tour', to:  "static_pages#tour"
   match '/contact', to:  "static_pages#contact"
   match '/users', to:  "static_pages#users"
+  match '/outlist', to: "static_pages#tour"
 
 
   # The priority is based upon order of creation:

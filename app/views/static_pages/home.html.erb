@@ -1,10 +1,12 @@
 <% provide(:title, 'Home') %>
 <div class="center hero-unit">
-  <h2>Welcome to Gettin' Out</h2>
+  <% if user_signed_in? %>
+  	<%= link_to "Create an Out!", outlist_path, class: "btn btn-large btn-primary" %>
+  <% else %>
+  	<h2>Welcome to Gettin' Out</h2>
+  	<p>This is an app helping people Get Out of The House.</p>
+  	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	<% end %>
 
-  <h3>
-    This is an app helping people Get Out of The House.
-  </h3>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  
 </div>
