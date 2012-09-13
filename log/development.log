@@ -61677,3 +61677,122 @@ Served asset /Amaranth-Bold-webfont.woff - 304 Not Modified (0ms)
 
 Started GET "/assets/images/ui-bg_inset-hard_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-09-12 18:42:52 -0700
 Served asset /images/ui-bg_inset-hard_100_eeeeee_1x100.png - 304 Not Modified (0ms)
+
+
+Started GET "/event" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Processing by EventsController#event as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mActivity Load (0.2ms)[0m  SELECT "activities".* FROM "activities" 
+  Rendered events/event.html.erb within layouts/application (99.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 203ms (Views: 201.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.ui.core.css?body=1" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Served asset /jquery.ui.core.css - 304 Not Modified (77ms)
+
+
+Started GET "/assets/jquery.ui.theme.css?body=1" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Served asset /jquery.ui.theme.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.css?body=1" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Served asset /jquery.ui.datepicker.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-12 18:48:59 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /jquery.ui.core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /activities.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /events.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/fonts.css" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /fonts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/formtastic.css" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /formtastic.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.css" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.css" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /custom.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/Amaranth-webfont.woff" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /Amaranth-webfont.woff - 304 Not Modified (3ms)
+
+
+Started GET "/assets/Amaranth-Bold-webfont.woff" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /Amaranth-Bold-webfont.woff - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gettinout_logo.png" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /gettinout_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-bg_inset-hard_100_eeeeee_1x100.png" for 127.0.0.1 at 2012-09-12 18:49:00 -0700
+Served asset /images/ui-bg_inset-hard_100_eeeeee_1x100.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-bg_highlight-soft_100_f9f9f9_1x100.png" for 127.0.0.1 at 2012-09-12 18:49:02 -0700
+Served asset /images/ui-bg_highlight-soft_100_f9f9f9_1x100.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-icons_5fa5e3_256x240.png" for 127.0.0.1 at 2012-09-12 18:49:02 -0700
+Served asset /images/ui-icons_5fa5e3_256x240.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-bg_diagonals-thick_22_1484e6_40x40.png" for 127.0.0.1 at 2012-09-12 18:49:02 -0700
+Served asset /images/ui-bg_diagonals-thick_22_1484e6_40x40.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-bg_diagonals-small_25_c5ddfc_40x40.png" for 127.0.0.1 at 2012-09-12 18:49:02 -0700
+Served asset /images/ui-bg_diagonals-small_25_c5ddfc_40x40.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/ui-bg_diagonals-thick_26_2293f7_40x40.png" for 127.0.0.1 at 2012-09-12 18:49:03 -0700
+Served asset /images/ui-bg_diagonals-thick_26_2293f7_40x40.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/images/ui-bg_diagonals-thick_20_e69700_40x40.png" for 127.0.0.1 at 2012-09-12 18:49:04 -0700
+Served asset /images/ui-bg_diagonals-thick_20_e69700_40x40.png - 304 Not Modified (1ms)
