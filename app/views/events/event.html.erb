@@ -3,7 +3,11 @@
 	<% @creator = current_user %>
 		<div class="minithumb"><%= image_tag @creator.image_url(:minithumb).to_s, :class => 'img-rounded' %>
 	  <p class="minithumbtext"><%= @creator.username %></p></div>
-	  <p id="wantsto" class="hidden">would like<br/> to go to</p>
+	  <p id="wantsto" class="hidden">would like to<br/> get out for</p>
+
+		<div id="datechosen" class="hidden">
+				<p id="ondate">on <span id="thedate"></span></p>
+		</div>
 
 	<div id="activitylist" class="clearfloats"></div>
 		<h4 class="activityquestion">What would you like to do? <span class="smaller">Click an activity to choose.</span></h4>
@@ -12,7 +16,7 @@
 	 	 <div class="minithumb activity"><%= image_tag activity.image_url(:minithumb).to_s, :class => 'img-rounded' %>
 	 	 <p class="minithumbtext"><%= activity.title %></p></div>
 		<% end %>
-	<div id="activitydate" class="hidden">
+	<div id="activitydate" class="clearfloats hidden">
 		<h4 class="activitydatequestion">When would you like to go? <span class="smaller">Click a day on the calendar.</span></h4>
 		<div id="activitycalendar" class="clearfloats jquery-ui-date"></div>
 	</div>

@@ -4,7 +4,12 @@
 jQuery ->
   $(".jquery-ui-date").datepicker(
     altField: "#date-alt",
-    altFormat: "yy-mm-d"
+    altFormat: "yy-mm-d",
+    onSelect: (dateText, inst) ->
+      $('#thedate').append(dateText)
+      $("#datechosen").removeClass("hidden")      
+      $("#activitydate").addClass("hidden")
+      $('.hero-unit-event').height(100)
   )
 
   $(".activity").click ->

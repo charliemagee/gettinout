@@ -65,7 +65,7 @@ h6 {
 .hero-unit-event {
   height:380px;
   position: relative;
-  padding: 25px 20px;
+  padding: 25px 10px;
   margin-bottom: 10px;
   background-color: #72bffa;
   -webkit-border-radius: 20px;
@@ -99,10 +99,11 @@ h6 {
 #activitylist {
   position: relative;
 }
-#wantsto {
-  position: relative;
-  top: 35px;
-  float: left;
+.activityquestion, .activitydatequestion {
+  text-align: center !important;
+  margin-top: 20px;
+}
+#wantsto, #ondate {
   font-family: 'AmaranthBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -111,17 +112,27 @@ h6 {
   margin: 0 0 8px 0;
   text-align: center;
 }
+#wantsto {
+  position: relative;
+  top: 35px;
+  float: left;
+}
+#ondate {
+  position: relative;
+  top: 35px;
+  float: left;
+  left: 110px;
+}
 .selectedactivity {
   position: absolute;
   top:26px;
-  left:210px;
+  left:220px;
 }
 #activitydate {
   position: relative;
-  margin-top: 20px;
 }
 #activitycalendar {
-  margin: 10px 0 0 293px;
+  margin: 10px 0 0 243px;
 }
 div.ui-datepicker{
  font-size:12px;
