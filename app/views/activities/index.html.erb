@@ -1,0 +1,24 @@
+<h3>Activities</h3>
+<%= link_to 'New Activity', new_activity_path %>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @activities.each do |activity| %>
+  <tr>
+    <td><%= image_tag activity.image_url(:minithumb).to_s, :class => 'roundedCorners' %></td>
+    <td><%= activity.title %></td>
+    <td><%= activity.location %></td>
+    <td><%= link_to 'Show', activity %></td>
+    <td><%= link_to 'Edit', edit_activity_path(activity) %></td>
+    <td><%= link_to 'Destroy', activity, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>

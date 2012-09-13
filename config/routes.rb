@@ -1,4 +1,8 @@
 Gettinout::Application.routes.draw do
+  resources :activities
+
+  resources :events
+
   devise_for :users
   devise_scope :user do
     match '/signup', to:  "devise/registrations#new"
@@ -17,6 +21,8 @@ Gettinout::Application.routes.draw do
   match '/contact', to:  "static_pages#contact"
   match '/users', to:  "static_pages#users"
   match '/outlist', to: "static_pages#tour"
+
+  match '/event', to: "events#event"
 
 
   # The priority is based upon order of creation:

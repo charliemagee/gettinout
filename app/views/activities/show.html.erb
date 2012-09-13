@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h4> <%= @activity.title %></h4>
+
+<p><b>Location:</b><%= @activity.location %></p>
+
+<p><%= image_tag @activity.image_url(:thumb).to_s %></p>
+
+
+<%= link_to 'Edit', edit_activity_path(@activity) %> |
+<%= link_to 'Back', activities_path %>

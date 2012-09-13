@@ -53,7 +53,99 @@ h5 {
 h6 {
   font-size: 18px;
 }
+.smaller {
+  font-size: 70%;
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  color: black;
+  font-weight: normal;
+}
 
+/* event creating */
+
+.hero-unit-event {
+  height:380px;
+  position: relative;
+  padding: 25px 20px;
+  margin-bottom: 10px;
+  background-color: #72bffa;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+  border: solid 6px white;
+}
+.minithumb {
+  float: left;
+  margin: 0 0 10px 0;
+  border: none;
+  width: 95px;
+  padding: 5px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+.minithumbtext {
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  color: #000 !important;
+  font-weight: normal !important;
+  margin: 3px 0 0 0;
+  clear: left;
+  font-size:13px !important;
+  line-height: 15px !important;
+}
+.activity {
+  position: relative;
+}
+#activitylist {
+  position: relative;
+}
+#wantsto {
+  position: relative;
+  top: 35px;
+  float: left;
+  font-family: 'AmaranthBold', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #0568c4;
+  font-weight: normal;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+.selectedactivity {
+  position: absolute;
+  top:26px;
+  left:210px;
+}
+#activitydate {
+  position: relative;
+  margin-top: 20px;
+}
+#activitycalendar {
+  margin: 10px 0 0 293px;
+}
+div.ui-datepicker{
+ font-size:12px;
+}
+
+.clearfloats {
+  clear:both;
+}
+.img-rounded {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* visibility */
+.showing {
+  display: block;
+}
+.hidden {
+  display: none;
+}
 
 /* alignment and moving things around */
 .center {
@@ -111,7 +203,8 @@ a {
   margin: 0 10px 0 0;
 }
 .hero-unit {
-  padding: 25px 60px;
+  position: relative;
+  padding: 25px 20px;
   margin-bottom: 30px;
   background-color: #72bffa;
   -webkit-border-radius: 20px;
@@ -123,9 +216,13 @@ a {
 /* footer */
 
 footer {
-  margin: 45px auto 20px;
+  margin: 0px auto 20px;
   padding-top: 5px;
-  border-top: 2px solid white;
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  font-weight: normal !important;
+  font-size:13px !important;
+  line-height: 15px !important;
+  /* border-top: 2px solid white; */
   width:724px;
   color: white;
   a {

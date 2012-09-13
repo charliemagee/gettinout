@@ -1,0 +1,19 @@
+<%= semantic_form_for @event do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :date, :as => :string, :input_html => { :class => 'jquery-ui-date'} %>
+    <%= f.input :date, :as => :hidden, :input_html => { :id => 'date-alt'} %>
+    <%= f.input :activity, :as => :radio, :collection => Activity.all %>
+  <% end %>
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :button %>
+    <%= f.action :cancel, :as => :link %>
+  <% end %>
+<% end %>
+<br/>
+
+<h2>Our Activities</h2>
+<% @activities = Activity.all %>
+<% @activities.each do |activity| %>
+  <div class="minithumb"><%= image_tag activity.image_url(:minithumb).to_s %><br/>
+  <p class="minithumbtext"><%= activity.title %></p></div>
+<% end %>

@@ -5,7 +5,7 @@
 
   <% if f.object.image? %>
     <%= f.label :image %>
-    <%= image_tag f.object.image_url(:thumb) %>
+    <%= image_tag f.object.image_url(:thumb), :class => 'roundedCorners' %>
     <%= f.file_field :image %>
     <%= f.hidden_field :image_cache %>
   <% else %>
@@ -15,6 +15,9 @@
   <% end %>
   
   <p>&nbsp;</p>
+
+  <div><%= f.label :username %><br />
+  <%= f.text_field :username %></div>
 
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>

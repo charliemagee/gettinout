@@ -58,6 +58,9 @@ module Gettinout
     config.assets.version = '1.0'
 
     # Added this to override Active Admin's scaffolding
-    config.app_generators.scaffold_controller = :scaffold_controller
+    config.app_generators.scaffold_controller = :scaffold_controller  
+
+    Date::DATE_FORMATS.merge!(:default => "%m/%d/%Y")
+    Date::DATE_FORMATS[:short_ordinal] = lambda { |date| date.strftime("%B #{date.day.ordinalize}") }
   end
 end
