@@ -27,6 +27,27 @@ $grayLighter : #9e9e9e;
   box-sizing: border-box;
 }
 
+tr.record {
+  height:90px;
+}
+td {
+  padding: 0 10px;
+}
+
+/* big wrapper for important items, the generic version */
+.hero-unit-scaffold {
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #72bffa;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
+      -moz-box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
+          box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
+  border: solid 6px white;
+}
+
 /* typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'AmaranthBold', Arial, sans-serif;
@@ -60,6 +81,27 @@ h6 {
   font-weight: normal;
 }
 
+/* tables for editing models */
+
+.indexthumb {
+  width:200px;
+}
+.indexfield {
+  width:320px;
+}
+.indexaction {
+  width:50px;
+}
+.action {
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  font-size: 14px;
+  color: white !important;
+  font-weight: normal;
+}
+.actions {
+  margin-top:15px;
+}
+
 /* event creating */
 
 .hero-unit-event {
@@ -71,6 +113,9 @@ h6 {
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
+      -moz-box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
+          box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
   border: solid 6px white;
 }
 .minithumb {
@@ -150,6 +195,10 @@ div.ui-datepicker{
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* activity creating */
+
+
+
 /* visibility */
 .showing {
   display: block;
@@ -185,10 +234,21 @@ div.ui-datepicker{
 	text-decoration: none;
 }
 
+.btn-medium {
+  margin-top:10px;
+  font-size:16px;
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
 .btn-large {
   margin-top:15px;
   font-size:20px;
- }
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  color: #fff !important;
+  font-weight: normal !important;
+}
 
 a {
   text-decoration: none !important;
@@ -294,7 +354,7 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   padding: 10px;
   height: auto;
-  margin-bottom: 15px;
+  margin: -15px 0 20px 0;
   @include box_sizing;
 }
 

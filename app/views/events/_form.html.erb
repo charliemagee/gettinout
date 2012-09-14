@@ -1,19 +1,24 @@
+<div class="center hero-unit-scaffold">
 <%= semantic_form_for @event do |f| %>
   <%= f.inputs do %>
+    <% @creator = current_user %>
+    <div class="minithumb"><%= image_tag @creator.image_url(:minithumb).to_s, :class => 'img-rounded' %>
+    <p class="minithumbtext"><%= @creator.username %></p></div>
+  <div id="activitylist" class="clearfloats"></div>
     <%= f.input :date, :as => :string, :input_html => { :class => 'jquery-ui-date'} %>
     <%= f.input :date, :as => :hidden, :input_html => { :id => 'date-alt'} %>
-    <%= f.input :activity, :as => :radio, :collection => Activity.all %>
+    <h2>Our Activities</h2>
+<% @activities = Activity.all %>
+<% @activities.each do |activity| %>
+  <div class="minithumb"><%= image_tag activity.image_url(:minithumb).to_s, :class => 'img-rounded' %><br/>
+  <p class="minithumbtext"><%= activity.title %></p>
+  <input type="radio" name="activity[activity_id]" value="<%= activity.id %>" />
+  </div>
+<% end %>
   <% end %>
   <%= f.actions do %>
     <%= f.action :submit, :as => :button %>
     <%= f.action :cancel, :as => :link %>
   <% end %>
 <% end %>
-<br/>
 
-<h2>Our Activities</h2>
-<% @activities = Activity.all %>
-<% @activities.each do |activity| %>
-  <div class="minithumb"><%= image_tag activity.image_url(:minithumb).to_s %><br/>
-  <p class="minithumbtext"><%= activity.title %></p></div>
-<% end %>

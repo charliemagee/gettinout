@@ -21,8 +21,8 @@
   </div>
   <div class="field">
     <% if f.object.image? %>
-      <%= f.label :image %>
-      <%= image_tag f.object.image_url(:thumb) %>
+      <%= f.label :image%>
+      <%= image_tag f.object.image_url(:thumb), :class => 'img-rounded'  %>
       <%= f.file_field :image %>
       <%= f.hidden_field :image_cache %>
     <% else %>
@@ -31,7 +31,7 @@
       <%= f.hidden_field :image_cache %>
     <% end %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions pushdown1">
+    <%= f.submit 'Submit Changes', class: "btn btn-medium btn-primary"  %>
   </div>
 <% end %>
