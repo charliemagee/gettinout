@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
-<% @activity = Activity.find(params[:id]) %>
 <p>
   <b>Date:</b>
-  <%= @event.date %>
+  <%= @event.date.to_formatted_s(:short_ordinal) %>
 </p>
 
 <p>
+	<% @activity = Activity.find(params[:id]) %>
   <b>Activity:</b>
   <%= @activity.title %>
-  <%= image_tag @activity.image_url(:minithumb).to_s %>
+  <%= image_tag @activity.image_url(:minithumb).to_s, :class => 'img-rounded' %>
 </p>
 
 
