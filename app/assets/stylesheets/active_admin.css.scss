@@ -4,3 +4,12 @@
 
 // To customize the Active Admin interfaces, add your
 // styles here:
+
+.inline-hints img {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}

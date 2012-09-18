@@ -118,9 +118,13 @@ h6 {
           box-shadow: 0px 0px 10px 7px rgba(50, 50, 50, .3);
   border: solid 6px white;
 }
+.showthumb {
+  float: left;
+  margin-right:10px;
+}
 .minithumb {
   float: left;
-  margin: 0 0 10px 0;
+  margin: 0 0 13px 0;
   border: none;
   width: 95px;
   padding: 5px;
@@ -133,7 +137,7 @@ h6 {
   font-family: 'AmaranthRegular', Arial, sans-serif;
   color: #000 !important;
   font-weight: normal !important;
-  margin: 3px 0 0 0;
+  margin: 5px 0 0 0 !important;
   clear: left;
   font-size:13px !important;
   line-height: 15px !important;
@@ -354,8 +358,11 @@ input, textarea, select, .uneditable-input {
   width: 100%;
   padding: 10px;
   height: auto;
-  margin: -15px 0 20px 0;
+  margin: 0px 0 20px 0;
   @include box_sizing;
+}
+label {
+  margin-bottom: 5px !important;
 }
 
 #error_explanation {

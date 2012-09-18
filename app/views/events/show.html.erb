@@ -1,16 +1,15 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <b>Date:</b>
-  <%= @event.date.to_formatted_s(:short_ordinal) %>
-</p>
+<div class="hero-unit-scaffold">
 
-<p>
 	<% @activity = Activity.find(params[:id]) %>
-  <b>Activity:</b>
-  <%= @activity.title %>
-  <%= image_tag @activity.image_url(:minithumb).to_s, :class => 'img-rounded' %>
-</p>
+	<%= image_tag @activity.image_url(:thumb).to_s, :class => 'img-rounded showthumb' %>
+	<p><br/></p>
+	<h4> <%= @activity.title %></h4>
+
+	<p><b>Location:</b> <%= @activity.location %></p>
+	<p><b>Date:</b> <%= @event.date.to_formatted_s(:short_ordinal) %></p>
+<p class="clearfloats"><br/></p>
 
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+</div>

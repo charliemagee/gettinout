@@ -1,11 +1,18 @@
-<p id="notice"><%= notice %></p>
 
+
+<div class="hero-unit-scaffold">
+
+<%= image_tag @activity.image_url(:thumb).to_s, :class => 'img-rounded showthumb' %>
+<p><br/></p>
 <h4> <%= @activity.title %></h4>
 
-<p><b>Location:</b><%= @activity.location %></p>
+<p><b>Location:</b> <%= @activity.location %></p>
+<p class="clearfloats"><br/></p>
 
-<p><%= image_tag @activity.image_url(:thumb).to_s, :class => 'img-rounded' %></p>
+
 
 
 <%= link_to 'Edit', edit_activity_path(@activity) %> |
-<%= link_to 'Back', activities_path %>
+<%= link_to 'Activity List', activities_path %> |
+<%= link_to 'New Activity', new_activity_path %>
+</div>

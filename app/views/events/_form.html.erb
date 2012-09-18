@@ -8,13 +8,13 @@
     <%= f.input :date, :as => :string, :input_html => { :class => 'jquery-ui-date'} %>
     <%= f.input :date, :as => :hidden, :input_html => { :id => 'date-alt'} %>
     <h2>Our Activities</h2>
-<% @activities = Activity.all %>
-<% @activities.each do |activity| %>
-  <div class="minithumb"><%= image_tag activity.image_url(:minithumb).to_s, :class => 'img-rounded' %><br/>
-  <p class="minithumbtext"><%= activity.title %></p>
-  <input type="radio" name="activity[activity_id]" value="<%= activity.id %>" />
-  </div>
-<% end %>
+      <% @activities = Activity.all %>
+      <% @activities.each do |activity| %>
+        <div class="minithumb"><%= image_tag activity.image_url(:minithumb).to_s, :class => 'img-rounded' %><br/>
+        <p class="minithumbtext"><%= activity.title %></p>
+        <%= radio_button_tag :event, activity.id, @event.activity_id %>
+        </div>
+      <% end %>
   <% end %>
   <%= f.actions do %>
     <%= f.action :submit, :as => :button %>
