@@ -3,7 +3,9 @@
   <%= f.inputs do %>
     <% @creator = current_user %>
     <div class="minithumb"><%= image_tag @creator.image_url(:minithumb).to_s, :class => 'img-rounded' %>
-    <p class="minithumbtext"><%= @creator.username %></p></div>
+    <!-- <p class="minithumbtext"> -->
+      <%=# @creator.username %>
+    <!-- </p></div> -->
   <div id="activitylist" class="clearfloats"></div>
     <%= f.input :date, :as => :string, :input_html => { :class => 'jquery-ui-date'} %>
     <%= f.input :date, :as => :hidden, :input_html => { :id => 'date-alt'} %>
