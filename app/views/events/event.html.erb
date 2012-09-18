@@ -2,7 +2,7 @@
 
 	<% @creator = current_user %>
 		<div class="minithumb"><%= image_tag @creator.image_url(:minithumb).to_s, :class => 'img-rounded' %>
-	  <p class="minithumbtext"><%= @creator.username %></p></div>
+	  
 	  <p id="wantsto" class="hidden">would like to<br/> get out for</p>
 
 		<div id="datechosen" class="hidden">
