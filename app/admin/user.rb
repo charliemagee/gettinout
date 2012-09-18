@@ -1,5 +1,7 @@
 ActiveAdmin.register User do
 
+  filter :username
+
   index do
     column :username
     column :phone_number
