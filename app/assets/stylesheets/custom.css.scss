@@ -147,10 +147,12 @@ h6 {
 }
 #activitylist {
   position: relative;
+  width: 700px;
 }
 .activityquestion, .activitydatequestion {
   text-align: center !important;
   margin-top: 20px;
+  width: 700px;
 }
 #wantsto, #ondate {
   font-family: 'AmaranthBold', Arial, sans-serif;
@@ -171,6 +173,10 @@ h6 {
   top: 35px;
   float: left;
   left: 110px;
+}
+#saveout {
+  float:right;
+  margin: 20px 70px 0 0;
 }
 .selectedactivity {
   position: absolute;
