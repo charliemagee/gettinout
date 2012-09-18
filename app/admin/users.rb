@@ -1,10 +1,8 @@
 ActiveAdmin.register User do
-
-  filter :username
-
+  
   index do
-    # column :username
-    # column :phone_number
+    column :username
+    column :phone_number
     column :email
     column :image
     column :created_at
@@ -14,9 +12,9 @@ ActiveAdmin.register User do
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "User Details" do
       f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image_url(:thumb))
-      # f.input :username
+      f.input :username
       f.input :email
-      # f.input :phone_number
+      f.input :phone_number
       f.input :password
       f.input :password_confirmation
       f.input :superadmin, :label => "Super Administrator"
@@ -39,5 +37,5 @@ ActiveAdmin.register User do
   }
   member_action :create, :method => :post, &create_or_edit
   member_action :update, :method => :put, &create_or_edit
-
+  
 end
